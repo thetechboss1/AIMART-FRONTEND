@@ -1,0 +1,8 @@
+.sidebar {
+    display: fixed;
+    left: 0;
+    top: 0;
+}
+.logo {
+    margin: 20px 5px;
+}
