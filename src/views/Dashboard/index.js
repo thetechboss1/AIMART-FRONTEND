@@ -2,12 +2,12 @@ import React from 'react';
 import { Layout, Menu } from 'antd';
 import styles from './index.module.css';
 import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
-import Dashboard from '../../views/DashboardHome';
-import MyProfile from '../../views/MyProfile';
-import Properties from '../../views/Properties';
-import Reports from '../../views/Reports';
-import Support from '../../views/Support';
-import Logout from '../../views/Logout';
+import Home from '../Home';
+import MyProfile from '../MyProfile';
+import Properties from '../Properties';
+import Reports from '../Reports';
+import Support from '../Support';
+import Logout from '../Logout';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -72,7 +72,7 @@ export default function index() {
                     <Header/>
                     <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
                         <Switch>
-                            <Route exact path="/" component={Dashboard}/>
+                            <Route exact path="/" component={Home}/>
                             <Route path="/profile" component={MyProfile}/>
                             <Route path="/properties" component={Properties}/>
                             <Route path="/reports" component={Reports}/>
