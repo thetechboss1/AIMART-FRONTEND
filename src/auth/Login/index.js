@@ -3,8 +3,6 @@ import { Form, Input, Button, Checkbox, Card } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import styles from './index.module.css';
 import { Link } from 'react-router-dom';
-import { login } from '../../actions/authActions';
-import { clearErrors } from '../../flux/actions/errorActions';
 
 export default class index extends Component {
     state = {
@@ -53,9 +51,6 @@ export default class index extends Component {
                             <Form.Item valuePropName="checked" noStyle>
                                 <Checkbox>Remember me</Checkbox>
                             </Form.Item>
-                            <a href="#">
-                            Forgot password
-                            </a>
                         </Form.Item>
 
                         <Form.Item>
